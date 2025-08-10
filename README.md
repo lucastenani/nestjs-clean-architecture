@@ -1,6 +1,8 @@
 ## 🛠️ Tech Stack
 
 - **Biome** – Code formatting and linting
+- **Docker + Docker Compose** – Containerized PostgreSQL database
+- **PostgreSQL** – Relational database
 
 ## 🌐 API Endpoints
 
