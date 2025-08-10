@@ -1,6 +1,14 @@
 # Variables
 @baseUrl = http://localhost:3333
 
-# Health check
-GET {{baseUrl}}/health
+# Create account
+# @name createAccounts
+POST {{baseUrl}}/accounts
+Accept: application/json
+Content-Type: application/json
+
+# {
+# 	"name": "Test room",
+#   "description": "This is a test"
+# }
 

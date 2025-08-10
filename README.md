@@ -10,4 +10,4 @@
 
 - The API will be running at: http://localhost:3333
 
-  - GET /health – Application health check
+  - `POST /accounts` – Creates a new user account
