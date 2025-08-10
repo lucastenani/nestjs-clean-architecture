@@ -6,6 +6,7 @@
 - **Prisma** – Next-generation ORM for type-safe database access and migrations
 - **@prisma/client** – Auto-generated Prisma client for database queries
 - **bcryptjs** – Library to hash and verify passwords securely
+- **Zod** – Schema validation for request inputs and environment variables
 
 ## 🌐 API Endpoints
 

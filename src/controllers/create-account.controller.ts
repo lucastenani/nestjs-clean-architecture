@@ -1,14 +1,23 @@
 import { Body, ConflictException, Controller, Post } from '@nestjs/common'
 import { hash } from 'bcryptjs'
 import { PrismaService } from 'src/prisma/prisma.service'
+import z from 'zod'
+
+const createAccountBodySchema = z.object({
+	name: z.string().min(2).max(100),
+	email: z.email(),
+	password: z.string().min(6).max(100),
+})
+
+type CreateAccountBody = z.infer<typeof createAccountBodySchema>
 
 @Controller('/accounts')
 export class CreateAccountController {
 	constructor(private prisma: PrismaService) {}
 
 	@Post()
-	async handle(@Body() body: any) {
-		const { name, email, password } = body
+	async handle(@Body() body: CreateAccountBody) {
+		const { name, email, password } = createAccountBodySchema.parse(body)
 
 		const userWithSameEmail = await this.prisma.user.findUnique({
 			where: {
