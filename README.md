@@ -3,6 +3,8 @@
 - **Biome** – Code formatting and linting
 - **Docker + Docker Compose** – Containerized PostgreSQL database
 - **PostgreSQL** – Relational database
+- **Prisma** – Next-generation ORM for type-safe database access and migrations
+- **@prisma/client** – Auto-generated Prisma client for database queries
 
 ## 🌐 API Endpoints
 
