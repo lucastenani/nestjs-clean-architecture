@@ -7,8 +7,21 @@ POST {{baseUrl}}/accounts
 Accept: application/json
 Content-Type: application/json
 
-# {
-# 	"name": "Test room",
-#   "description": "This is a test"
-# }
+{
+	"name": "Test room",
+  "email": "test@l.com",
+  "password": "test12345"
+}
+###
+
+# Authenticate
+# @name auth
+POST {{baseUrl}}/sessions
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "test@l.com",
+  "password": "test12345"
+}
 
