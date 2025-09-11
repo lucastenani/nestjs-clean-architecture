@@ -12,6 +12,7 @@ A study project focused on Clean Architecture principles using NestJS.
 - **@prisma/client** – Auto-generated Prisma client for database queries
 - **bcryptjs** – Secure password hashing and verification
 - **Zod** – Schema validation for request inputs and environment variables
+- **passport-jwt** – JWT authentication strategy for Passport (used in NestJS Auth)
 
 ## �️ Project Structure & Patterns
 

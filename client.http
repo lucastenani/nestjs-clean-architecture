@@ -1,8 +1,9 @@
 # Variables
 @baseUrl = http://localhost:3333
+@authToken = {{authenticate.response.body.access_token}}
 
 # Create account
-# @name createAccounts
+# @name create_account
 POST {{baseUrl}}/accounts
 Accept: application/json
 Content-Type: application/json
@@ -15,7 +16,7 @@ Content-Type: application/json
 ###
 
 # Authenticate
-# @name auth
+# @name authenticate
 POST {{baseUrl}}/sessions
 Accept: application/json
 Content-Type: application/json
@@ -24,4 +25,11 @@ Content-Type: application/json
   "email": "email@l.com",
   "password": "password"
 }
+
+###
+
+# @name create_question
+POST {{baseUrl}}/questions
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
 
