@@ -9,8 +9,8 @@ Content-Type: application/json
 
 {
 	"name": "Test room",
-  "email": "test@l.com",
-  "password": "test12345"
+  "email": "email@l.com",
+  "password": "password"
 }
 ###
 
@@ -21,7 +21,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email": "test@l.com",
-  "password": "test1235"
+  "email": "email@l.com",
+  "password": "password"
 }
 
