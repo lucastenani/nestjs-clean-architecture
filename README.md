@@ -13,6 +13,8 @@ A study project focused on Clean Architecture principles using NestJS.
 - **bcryptjs** – Secure password hashing and verification
 - **Zod** – Schema validation for request inputs and environment variables
 - **passport-jwt** – JWT authentication strategy for Passport (used in NestJS Auth)
+- **SWC** – Super-fast TypeScript for testing and building
+- **Vitest** – Vite-native unit testing framework
 
 ## �️ Project Structure & Patterns
 
