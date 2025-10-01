@@ -54,3 +54,4 @@ pnpm start:dev
   - `POST /accounts` – Create a new user account
   - `POST /sessions` – Authenticate and create a new session
   - `POST /questions` – Create a new question
+  - `GET /questions` – Fetch recent questions
