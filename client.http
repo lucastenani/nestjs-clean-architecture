@@ -33,3 +33,16 @@ POST {{baseUrl}}/questions
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
+{
+  "title": "Test question",
+  "content": "This is a test question"
+}
+
+###
+
+# @name fetch_recent_questions
+GET {{baseUrl}}/questions?page=1&pageSize=10
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+

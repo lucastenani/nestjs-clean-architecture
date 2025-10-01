@@ -53,3 +53,5 @@ pnpm start:dev
 - The API runs at: http://localhost:3333
   - `POST /accounts` – Create a new user account
   - `POST /sessions` – Authenticate and create a new session
+  - `POST /questions` – Create a new question
+  - `GET /questions?page=1&pageSize=10` – Fetch paginated recent questions
