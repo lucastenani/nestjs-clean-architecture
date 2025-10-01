@@ -35,6 +35,6 @@ Authorization: Bearer {{authToken}}
 
 {
   "title": "Test question",
-  "description": "This is a test question"
+  "content": "This is a test question"
 }
 
