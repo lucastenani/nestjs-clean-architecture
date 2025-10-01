@@ -26,13 +26,13 @@ export class CreateQuestionController {
 		@CurrentUser() user: UserPayload
 	) {
 		const { title, content } = body
-		const userId = user.sub
+		const authorId = user.sub
 
 		const slug = this.convertToSlug(title)
 
 		await this.prisma.question.create({
 			data: {
-				authorId: userId,
+				authorId,
 				title,
 				content,
 				slug,
