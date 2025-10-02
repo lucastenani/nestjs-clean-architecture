@@ -15,6 +15,7 @@ A study project focused on Clean Architecture principles using NestJS.
 - **passport-jwt** – JWT authentication strategy for Passport (used in NestJS Auth)
 - **SWC** – Super-fast TypeScript for testing and building
 - **Vitest** – Vite-native unit testing framework
+- **Supertest** – HTTP assertions for end-to-end testing
 - **Dotenv** – Module that loads environment variables from a .env file
 
 ## Project Structure & Patterns
